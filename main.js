@@ -1,9 +1,6 @@
-// console.log('GAME');
-
 // 1 - Initialize canvas
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
-
 
 // Board dimentions
 canvas.width = 800;
