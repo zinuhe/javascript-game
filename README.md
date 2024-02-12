@@ -3,6 +3,7 @@
 
 ```bash
 pnpm init
+pnpm add express
 ```
 
 ## Run
