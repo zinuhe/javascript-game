@@ -1,15 +1,45 @@
 # javascript-game
  Basic game code
 
-```bash
-pnpm init
-pnpm add express
+## Create
+```shell
+npm create vite@latest game
 ```
 
-## Run
-```bash
-pnpm dev
+## Install dependencies
+```shell
+pnpm install
 ```
+
+# To Run
+```shell
+pnpm run dev
+```
+
+## Linter
+### Install
+```shell
+pnpm install standard -D
+```
+
+### Config
+[Documentation](https://eslint.org/docs/latest/use/configure/)
+
+On **`package.json`** add at the end:
+
+```javascript
+"eslintConfig": {
+  "extends":[
+      "standard"
+  ],
+  "rules": {
+    "space-before-function-paren": ["error", "never"]
+  }
+}
+```
+
+## Canvas
+Add a canvas to draw on it
 
 
 ### 3D Libraries
