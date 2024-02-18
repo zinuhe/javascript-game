@@ -4,7 +4,7 @@ const ctx = canvas.getContext('2d')
 
 // Canvas dimentions
 canvas.width = 1080
-canvas.height = 900
+canvas.height = 700
 // Draw a background
 // ctx.fillStyle = '#909090' // Grey Background
 // ctx.fillRect(0, 0, canvas.width, canvas.height)
@@ -14,7 +14,7 @@ ctx.fillStyle = 'blue'
 ctx.fillRect(0, 0, 100, 100) // x, y, w, h
 
 // Draws an outlined rectangle
-ctx.strokeStyle = 'green'
+ctx.strokeStyle = 'green' // "rgb(255 0 0 / 50%)";
 ctx.strokeRect(150, 0, 100, 100) // x, y, w, h
 
 // Draws a line
@@ -27,6 +27,9 @@ ctx.beginPath()
 ctx.moveTo(0, 150)
 ctx.lineTo(300, 150)
 ctx.stroke()
+
+// ctx.setLineDash([4, 2]);
+// ctx.lineDashOffset = -offset;
 
 // Draws a circle
 ctx.beginPath()
@@ -55,3 +58,13 @@ ctx.lineTo(150, 450) // down
 ctx.lineTo(200, 400) // right
 ctx.closePath()
 ctx.stroke()
+
+// Using Path2D()
+const rectangle = new Path2D()
+rectangle.rect(300, 5, 50, 50)
+
+const circle = new Path2D()
+circle.arc(325, 30, 22, 0, 2 * Math.PI)
+
+ctx.stroke(rectangle)
+ctx.fill(circle)
