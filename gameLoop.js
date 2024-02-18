@@ -27,4 +27,5 @@ function update () {
   window.requestAnimationFrame(update) // Loop
 }
 
-update()
+// update()
+window.requestAnimationFrame(update) // Loop
